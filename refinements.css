@@ -1,0 +1,21 @@
+/* Identidade e acabamento da experiência */
+.brand-lockup,.login-brand,.app-brand { overflow: visible; }
+.brand-lockup img,.login-brand img { object-fit: contain; transform: none; }
+.app-brand { width: 180px; height: 96px; margin: -10px auto 12px; }
+.app-brand a { display: block; width: 100%; height: 100%; }
+.app-brand img { width: 100%; height: 100%; object-fit: contain; transform: none; filter: brightness(0) invert(1); }
+.hero-art { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 540px; }
+.hero-art-glow { inset: 8% 8% auto auto; width: min(80%,430px); aspect-ratio: 1; height: auto; }
+.hero-image-frame { position: relative; inset: auto; transform: none; width: min(100%, 500px); height: auto; aspect-ratio: 1.1; display: grid; place-items: center; border-radius: 48% 48% 16px 48%; background: linear-gradient(145deg,#fffdfa,#f2e8d9); border: 1px solid rgba(197,150,69,.18); }
+.hero-image-frame img { width: 80%; height: 80%; object-fit: contain; transform: none; }
+.hero-caption { position: relative; z-index: 1; text-align: center; margin-top: 22px; }
+.hero-caption .note-kicker { display: block; letter-spacing: .16em; margin-bottom: 5px; }
+.hero-caption strong { color: var(--brand-primary); font-family: var(--serif); font-weight: 500; font-size: 22px; }
+.app-sidebar { background: linear-gradient(165deg,#193f36,#12352e); }
+.nav-item { border-radius: 10px; min-height: 45px; font-size: 12px; font-weight: 600; transition: background .2s ease, color .2s ease; }
+.nav-item > span:first-child { width: 30px; height: 30px; flex: 0 0 30px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid rgba(214,176,104,.24); border-radius: 9px; background: rgba(255,255,255,.035); color: #d8b573; font-size: 16px; line-height: 1; }
+.nav-item.active > span:first-child,.nav-item:hover > span:first-child { background: rgba(211,170,96,.15); border-color: rgba(214,176,104,.45); }
+.nav-item:focus-visible,.button:focus-visible { outline: 3px solid #d2ab63; outline-offset: 3px; }
+.metric-card,.panel,.report-card { box-shadow: 0 8px 28px rgba(49,40,31,.035); border-color: #e8ded2; }
+.app-topbar { backdrop-filter: blur(12px); }
+@media(max-width:700px) { .hero-art { min-height: 0; width: 100%; padding: 25px 0 0; } .hero-image-frame { width: min(100%,400px); } .hero-art-glow { max-width: 320px; } .app-brand { height: 86px; } }

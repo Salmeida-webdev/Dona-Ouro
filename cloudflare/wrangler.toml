@@ -1,0 +1,8 @@
+name = "dona-de-ouro-demo-api"
+main = "worker.js"
+compatibility_date = "2026-11-19"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "dona_de_ouro_demo"
+database_id = "031f9670-3768-4216-a291-e30eb48800f9"

@@ -1,0 +1,10 @@
+{
+  "name": "dona-de-ouro-whitelabel-demo",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 4173",
+    "check": "node --check src/app.js && node --check src/brand.config.js && node --check src/integration.ports.js && node --check src/demo.data.js"
+  }
+}

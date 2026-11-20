@@ -18,4 +18,33 @@
 .nav-item:focus-visible,.button:focus-visible { outline: 3px solid #d2ab63; outline-offset: 3px; }
 .metric-card,.panel,.report-card { box-shadow: 0 8px 28px rgba(49,40,31,.035); border-color: #e8ded2; }
 .app-topbar { backdrop-filter: blur(12px); }
+.developer-credit { color: var(--muted); text-align: center; font-size: 12px; line-height: 1.5; padding: 24px 20px; border-top: 1px solid var(--line); }
+.app-topbar-start { display: flex; align-items: center; gap: 18px; flex: 1; min-width: 0; }
+.app-topbar-brand { display: block; flex: 0 0 auto; }
+.app-topbar-brand img { display: block; width: 112px; height: 58px; object-fit: contain; }
+.app-topbar-start .breadcrumb { border-left: 1px solid var(--line); padding-left: 18px; }
+.app-brand { display: none; }
+.nav-item .module-icon::before {
+  content: "";
+  width: 19px;
+  height: 19px;
+  background: url("./assets/modulos.png") no-repeat var(--icon-offset, 0) 0 / 190px 19px;
+}
++.nav-item[data-section="agenda"] { --icon-offset: -19px; }
+.nav-item[data-section="clientes"] { --icon-offset: -38px; }
+.nav-item[data-section="servicos"] { --icon-offset: -57px; }
+.nav-item[data-section="equipe"] { --icon-offset: -76px; }
+.nav-item[data-section="financeiro"] { --icon-offset: -95px; }
+.nav-item[data-section="analises"] { --icon-offset: -114px; }
+.nav-item[data-section="relatorios"] { --icon-offset: -133px; }
+.nav-item[data-section="acessos"] { --icon-offset: -152px; }
+.nav-item[data-section="configuracoes"] { --icon-offset: -171px; }
+@media (max-width: 700px) {
+  .app-topbar-start { gap: 8px; }
+  .app-topbar-brand img { width: 90px; height: 46px; }
+  .app-topbar-start .breadcrumb { padding-left: 8px; }
+}
+@media (max-width: 420px) {
+  .app-topbar-start .breadcrumb { display: none; }
+}
 @media(max-width:700px) { .hero-art { min-height: 0; width: 100%; padding: 25px 0 0; } .hero-image-frame { width: min(100%,400px); } .hero-art-glow { max-width: 320px; } .app-brand { height: 86px; } }
